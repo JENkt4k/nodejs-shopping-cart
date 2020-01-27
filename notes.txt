@@ -1,0 +1,6 @@
+docker-compose -f .\docker-compose.debug.yml  up --build
+
+
+package.json
+-- scripts
+ ->  "dev": "node --inspect=0.0.0.0:9229 ./app.js"
