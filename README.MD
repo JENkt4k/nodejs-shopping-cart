@@ -29,7 +29,7 @@ docker-compose -f .\docker-compose.debug.yml  up --build
 ### Technologies
 NodeJS, Express, Express-Session, Nodemon, hbs - Express.js view engine for handlebars.js
 
-Original code provided by: gtsopour@gmail.com, this is a for with Docker debugging 
+Original code provided by gtsopour@gmail.com, this is a repo for demonstrating with Docker debugging.
 
 # Debug With Docker!!!
 
