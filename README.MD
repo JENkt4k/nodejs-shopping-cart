@@ -7,7 +7,7 @@ You need to have installed Node and NPM.
 
 Clone this repository
 ``` shell
-git clone https://github.com/gtsopour/nodejs-shopping-cart.git
+git clone https://github.com/JENkt4k/nodejs-shopping-cart.git
 ```
 
 Install dependencies
@@ -16,19 +16,20 @@ npm install
 ```
 
 Start NodeJS server at http://localhost:3000
-``` shell
-npm start
+```shell
+docker-compose up --build
 ```
 
-For Nodemon usage
-``` shell
-nodemon ./bin/www
+Start with debugging
+```shell
+docker-compose -f .\docker-compose.debug.yml  up --build
 ```
+
 
 ### Technologies
 NodeJS, Express, Express-Session, Nodemon, hbs - Express.js view engine for handlebars.js
 
-For any extra questions, please contact me at gtsopour@gmail.com. 
+Original code provided by: gtsopour@gmail.com, this is a for with Docker debugging 
 
 # Debug With Docker!!!
 
