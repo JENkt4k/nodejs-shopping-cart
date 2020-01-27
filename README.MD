@@ -55,7 +55,7 @@ Original code provided by gtsopour@gmail.com, this is a repo for demonstrating w
 
 # Debug With Docker!!!
 
-The purpose of this repo was to pull an existing project and attempt to debug. 
+The purpose of this repo was to pull an existing project and walkthough configuring and running debug across a docker container. 
 
 "status_patch" contains the changes required to make debugging work:
 ```diff
@@ -107,19 +107,6 @@ index 0000000..15be0b9
 +    build: .
 +    ports:
 +      - "3000:3000" 
-\ No newline at end of file
-diff --git a/notes.txt b/notes.txt
-new file mode 100644
-index 0000000..d126e19
---- /dev/null
-+++ b/notes.txt
-@@ -0,0 +1,6 @@
-+docker-compose -f .\docker-compose.debug.yml  up --build
-+
-+
-+package.json
-+-- scripts
-+ ->  "dev": "node --inspect=0.0.0.0:9229 ./app.js"
 \ No newline at end of file
 diff --git a/package.json b/package.json
 index f6afc2e..5b39ab3 100644
