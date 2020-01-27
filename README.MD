@@ -25,6 +25,28 @@ Start with debugging
 docker-compose -f .\docker-compose.debug.yml  up --build
 ```
 
+If you've created the appropriat "launch.json" you can now hit "F5" in Visual Studio Code to attach to port 9229.
+
+launch.json
+```javascript
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [    
+    {
+    "name": "Docker: Attach to Node",
+    "type": "node",
+    "request": "attach",
+    "port": 9229,
+    "address": "localhost",
+    "localRoot": "${workspaceFolder}\\nodejs-shopping-cart\\",
+    "remoteRoot": "/",
+    "protocol": "inspector"
+  }]
+}
+```
 
 ### Technologies
 NodeJS, Express, Express-Session, Nodemon, hbs - Express.js view engine for handlebars.js
